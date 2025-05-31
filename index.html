@@ -10,5 +10,13 @@
         <embed src="NodeJSNotesForProfessionals.pdf" type="application/pdf" width="100%" height="600px">
             
     </div>
+
+    <script>
+  // Basic mobile detection
+  if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    document.getElementById('pdf-container').style.display = 'none';
+    document.getElementById('pdf-link').style.display = 'block';
+  }
+</script>
 </body>
 </html>
